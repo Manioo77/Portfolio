@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marek Manka portfolio</title>
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +19,7 @@
 
     <header>
         <div class="user">
-            <img src="images/portfolio.jpg" alt="">
+            <img src="images/portfolio.jpg" alt="image portfolio">
             <h3 class="name">Marek Mańka</h3>
             <p class="post">Student Informatyki</p>
         </div>
@@ -27,22 +29,19 @@
                 <li><a href="#home">Start</a></li>
                 <li><a href="#about">O mnie</a></li>
                 <li><a href="#education">Edukacja</a></li>
+                <li><a href="#experience">Doświadczenie</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="menu" class="fas fa-bars"></div>
-
-    <section class="home" id="home">
-
+    <section class="home" id="home" data-aos="fade-right">
         <h3>Cześć!</h3>
         <h1>Jestem <span>Marek Mańka</span></h1>
-        <p>Aktualnie jestem studentem Akademii WSB w Cieszynie na kierunku Informatyka.
-            <br> Szukam pracy jako front-end developer, ponieważ od dawna interesuje mnie projektowanie stron
-            internetowych.</p>
-
+        <div>
+        <span class="description"></span><span class="cursor"> |</span>
+        </div>
         <a href="#about"><button class="btn">O mnie <i class="fas fa-user"></i></button></a>
 
     </section>
@@ -53,57 +52,76 @@
 
         <div class="row">
 
-            <div class="info">
+            <div class="info" data-aos="fade-up">
                 <h3><span>imię i nazwisko : </span>Marek Mańka</h3>
                 <h3><span>wiek : </span>22</h3>
-                <h3><span>języki : </span>angielski B1</h3>
+                <h3><span>języki : </span>angielski B2</h3>
+                <h3><span>wykształcenie : </span>wyższe</h3>
                 <h3><span>studia : </span>Informatyka</h3>
                 <h3><span>miejsce zamieszkania : </span>Kraków</h3>
                 <h3><span>zainteresowania : </span>sport, ksiązki o rozwoju osobistym, gra na gitarze</h3>
+                <h3>
+                    
+                    <span>certyfikaty:</span> <br> <br>
+                    <p> ECDL PROFILE CERTIFICATE - S6 - Web Editing </p>
+                    <p> Web developer od podstaw - Bartłomiej Borowczyk </p>
+                    <p> Junior Frontend developer - Joanna Otmianowska</p>
+                    <p> Fundamenty języka HTML - Krystian Lisowski</p>
+                </h3>
                
             </div>
 
             <div class="counter">
-                <div class="box">
-                    <span>1+</span>
-                    <h3>Rok Tworzenia projektów</h3>
+                <div class="box" data-aos="flip-left">
+                    <span>2+</span>
+                    <h3>Lat Tworzenia projektów</h3>
                 </div>
 
-                <div class="box">
-                    <span>10+</span>
+                <div class="box" data-aos="flip-left">
+                    <span>20+</span>
                     <h3>Skończonych projektów</h3>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="flip-left">
                     <span>20+</span>
                     <h3>Kursów w kierunku programowania</h3>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="flip-left">
                     <span><i class="fa-solid fa-infinity"></i></span>
                     <h3>Chęci do nowej wiedzy</h3>
                 </div>
             </div>
 
         </div>
-        <!-- tekst z -->
     </section>
 
-    <section class="edukacja" id="education">
+    <section class="myEducationExper" id="education" data-aos="fade-right">
 
-        <!-- Edukacja -->
+        <!-- Education -->
         <h1 class="heading"><span>Moja </span>Edukacja</h1>
 
         <div class="box-container">
-            
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022 - obecnie</span>
+                <h3>UNIWERSYTET ŚLĄSKI W KATOWICACH
+                </h3>
+                <p>
+                    <b>II stopnia niestacjonarne</b> <br>
+                    <b> Wydział: </b>Wydział Nauk Ścisłych i Technicznych, Sosnowiec<br>
+                    <b> Kierunek: </b>Informatyka, Magisterskie
+                </p>
+            </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>2018 - 2022</span>
-                <h3>Akademia WSB w Cieszynie </h3>
+                <h3>AKADEMIA WSB W CIESZYNIE </h3>
                 <p>
-                    <b> Wydział: </b>Wydzial Zamiejscowy w Cieszynie        <br>
-                    <b> Kierunek: </b>Informatyka, Inzynierskie , Niestacjonarne
+                    <b>I stopnia niestacjonarne</b> <br>
+                    <b> Wydział: </b>Wydzial Zamiejscowy w Cieszynie<br>
+                    <b> Kierunek: </b>Informatyka, Inzynierskie<br>
                     <b> Specjalność: </b>Grafika komputerowa i projektowanie serwisów www
                 </p>
             </div>
@@ -111,24 +129,24 @@
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>2015 - 2018</span>
-                <h3>II Liceum Ogólnokształcące <br> im. Mikołaja Kopernika w Cieszynie</h3>
+                <h3>II Liceum Ogólnokształcące im. Mikołaja Kopernika w Cieszynie</h3>
                 <p>
-                    <br>
-                    <b>Liceum w Cieszynie o profilu sportowym <br>
-                    </b>
+                    <b>Profil:</b> Sportowy <br>
                 </p>
             </div>
-            </div>
 
-
-            <!-- Doświadczenie -->
             
+            </div>
+        </section>
+
+            <!--Experience-->
+            <section class="myEducationExper" id="experience" data-aos="fade-left">
             <h1 class="heading"><span>Moje </span>Doświadczenie zawodowe</h1>
-            <div class="box-container">
+            <div class="box-container" >
 
         
             <div class="box">
-                <i class="fas fa-graduation-cap"></i>
+                <i class="fi fi-rr-briefcase"></i>
                 <span>2021.10.01 - 2021.12.01</span>
                 <h3>HAEVO</h3>
                 <p><b>SERWISANT SPRZĘTU KOMPUTEROWEGO</b></p>
@@ -139,7 +157,7 @@
             </div>
 
             <div class="box">
-                <i class="fas fa-graduation-cap"></i>
+                <i class="fi fi-rr-briefcase"></i>
                 <span>2018.06 - 2021.07</span>
                 <h3>PPG CIESZYN</h3>
                 <p><b>LABORANT KONTROLI JAKOŚCI</b></p>
@@ -153,7 +171,7 @@
             </div>
 
             <div class="box">
-                <i class="fas fa-graduation-cap"></i>
+                <i class="fi fi-rr-briefcase"></i>
                 <span>2021.05 - 2021.06</span>
                 <h3>PPG CIESZYN</h3>
                 <p><b>LABORANT KONTROLI JAKOŚCI</b></p>
@@ -168,33 +186,33 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" data-aos="fade-up-left">
 
-        <h1 class="heading">Moje <span>portfolio</span></h1>
+        <h1 class="heading"><span>Moje </span>Portfolio</h1>
 
         <div class="box-container">
 
             <div class="box">
-                <img src="images/1.png" alt="">
+                <a href="https://github.com/Manioo77/Sklep-internetowy" target="_blank"><img src="images/1.png" alt=""></a>
             </div>
 
             <div class="box">
-                <img src="images/2.png" alt="">
+                <a href="https://github.com/Manioo77/Sklep-internetowy" target="_blank"><img src="images/2.png" alt=""></a>
             </div>
 
             <div class="box">
-                <img src="images/3.png" alt="">
+                <a href="https://github.com/Manioo77/projektQuizy" target="_blank"><img src="images/3.png" alt=""></a>
             </div>
 
             <div class="box">
-                <img src="images/4.png" alt="">
+                <a href="https://manioo77.github.io/To-do-list-JavaScript/ " target="_blank"><img src="images/4.png" alt=""></a>
             </div>
 
         </div>
         </h1>
     </section>
 
-    <section class="kontakt" id="contact">
+    <section class="contactToMe" id="contact" data-aos="fade-down-left">
 
         <h1 class="heading"><span>Kontakt </span> do mnie</h1>
 
@@ -205,12 +223,11 @@
                 <h3 class="title">Informacje do kontaktu</h3>
 
                 <div class="info">
-                    <h3><i class="fas.fa-envelope">mm729356@gmail.com</i></h3>
-                    <h3><i class="fas.phone"></i>501 290 572</h3>
-                    <h3><i class="fas.fa-map-marker-alt">Polska, Kraków</i></h3>
-                    <h3><i class="fas.fa-map-marker-alt">GitHub:
-                        https://github.com/Manioo
-                        77?tab=repositories</i></h3>
+                    <h3><i class="fi fi-rr-home"></i>Polska, Kraków</h3>
+                    <h3><i class="fi fi-rr-phone-call"></i>Numer telefonu: 501 290 572</h3>
+                    <h3><i class="fi fi-rr-envelope"></i>E-mail: mm729356@gmail.com</h3>
+                    <h3><a href="https://github.com/Manioo77"><img src="images/github.png" alt="" width="20px">GitHub: https://github.com/Manioo77</h3></a>
+                    <h3><a href="https://www.linkedin.com/in/marek-ma%C5%84ka-448a62233/"><img src="images/linkedin.png" alt="" width="20px">Linkedin: https://www.linkedin.com/in/marek-ma%C5%84ka-448a62233/</a></h3>
                 </div>
             </div>
 
@@ -221,13 +238,12 @@
         <img src="images/strzalka.png" alt="" width="50px" class="strzalka">
     </a>
 
-
-
-
     <script src="js/jquery-331.min.js"></script>
-
     <script src="js/script.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

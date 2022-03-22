@@ -35,6 +35,17 @@ body {
   padding-left: 35rem;
 }
 
+.cursor {
+  opacity: 0;
+  transition: 0.2s;
+  color: white;
+  font-size: 20px;
+}
+
+.cursor.active {
+  opacity: 1;
+}
+
 section {
   min-height: 100vh;
   padding: 1rem;
@@ -156,7 +167,8 @@ header .navbar ul li a:hover {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  padding: 0 15rem;
+  padding: 0 10rem;
+  text-align: justify;
 }
 
 .home h3 {
@@ -173,10 +185,11 @@ header .navbar ul li a:hover {
   color: var(--yellow);
 }
 
-.home p {
+.home span.description {
   font-size: 2rem;
   color: #eee;
   padding: 1rem 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .about .row {
@@ -195,14 +208,23 @@ header .navbar ul li a:hover {
 
 .about .row .info h3 {
   font-size: 2rem;
-  color: var(--yellow);
   padding: 1rem 0;
   font-weight: normal;
+  color: var(--yellow);
 }
 
 .about .row .info h3 span {
   color: #eee;
   padding: 0 0.5rem;
+}
+
+.info h3 a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.info h3 a:hover {
+  color: #eee;
 }
 
 .about .row .counter {
@@ -231,7 +253,7 @@ header .navbar ul li a:hover {
   color: white;
 }
 
-.edukacja .box-container {
+.myEducationExper .box-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -240,7 +262,7 @@ header .navbar ul li a:hover {
   padding-left: 3rem;
 }
 
-.edukacja .box-container .box {
+.myEducationExper .box-container .box {
   width: 35rem;
   margin: 4rem 3rem;
   padding-left: 4rem;
@@ -248,7 +270,7 @@ header .navbar ul li a:hover {
   position: relative;
 }
 
-.edukacja .box-container .box span {
+.myEducationExper .box-container .box span {
   font-size: 1.3rem;
   background: #222;
   color: white;
@@ -256,23 +278,23 @@ header .navbar ul li a:hover {
   padding: 0.5rem 2.5rem;
 }
 
-.edukacja .box-container .box h3 {
+.myEducationExper .box-container .box h3 {
   font-size: 2rem;
   color: white;
   padding-top: 1.5rem;
 }
 
-.edukacja .box-container .box p {
+.myEducationExper .box-container .box p {
   font-size: 1.4rem;
   color: #eee;
   padding: 1rem 0;
 }
 
-.edukacja .box-container .box p b {
+.myEducationExper .box-container .box p b {
   margin-bottom: 10px;
 }
 
-.edukacja .box-container .box i {
+.myEducationExper .box-container .box i {
   position: absolute;
   top: -1.5rem;
   left: -2.5rem;
@@ -306,34 +328,35 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  background-size: cover;
+  transition: 0.4s;
 }
 
 .portfolio .box-container .box img:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
-.kontakt .row {
+.contactToMe .row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.kontakt .row .content {
+.contactToMe .row .content {
   flex: 1 1 30rem;
   padding: 4rem;
   padding-bottom: 0;
 }
 
-.kontakt .row form {
+.contactToMe .row form {
   flex: 1 1 45rem;
   padding: 2rem;
   margin: 2rem;
   margin-bottom: 4rem;
 }
 
-.kontakt .row form .box {
+.contactToMe .row form .box {
   padding: 1.5rem;
   margin: 1rem 0;
   background: #333;
@@ -343,23 +366,24 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 
-.kontakt .row form .box::placeholder {
+.contactToMe .row form .box::placeholder {
   text-transform: capitalize;
 }
 
-.kontakt .row form .message {
+.contactToMe .row form .message {
   resize: none;
   height: 15rem;
 }
 
-.kontakt .row .content .title {
+.contactToMe .row .content .title {
   text-transform: uppercase;
   color: white;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
 
-.kontakt .row .content .info h3 {
+.contactToMe .row .content .info h3 {
+  margin-left: 20px;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -368,7 +392,23 @@ header .navbar ul li a:hover {
   font-weight: bolder;
 }
 
-.kontakt .row .content .info h3 i {
+.contactToMe .row .content .info h3 i {
+  margin-right: 20px;
+}
+
+.contactToMe .row .content .info h3 img {
+  margin-right: 20px;
+}
+
+.info span {
+  text-transform: capitalize;
+}
+
+h3 p {
+  margin-left: 5px;
+}
+
+.contactToMe .row .content .info h3 {
   padding-right: 1rem;
   color: var(--yellow);
 }
@@ -434,7 +474,7 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 
-  .edukacja .box-container .box {
+  .myEducation .box-container .box {
     width: 100%;
   }
 
@@ -442,7 +482,7 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 
-  .kontakt .row form {
+  .contactToMe.row form {
     margin: 3rem 0;
   }
 }
