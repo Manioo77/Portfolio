@@ -1,6 +1,6 @@
 # :fire: PORTFOLIO :fire:
 
-To visit page click https://manioo77.github.io/To-do-list-JavaScript/ or clone locally and follow instructions given below.
+To visit page click https://manioo77.github.io/Portfolio/ or clone locally and follow instructions given below.
 
 Website created to present my person. I described my education, experience and showed my projects.
 
