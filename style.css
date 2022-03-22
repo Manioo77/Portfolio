@@ -421,8 +421,9 @@ h3 p {
   display: none;
 }
 
-.strzalka {
-  color: yellow;
+.up {
+  color: black;
+  font-size: 40px;
 }
 
 /* responsywnosc */
